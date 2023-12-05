@@ -76,6 +76,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 9.75F, FontStyle.Bold);
+            label1.ForeColor = SystemColors.ControlDarkDark;
             label1.Location = new Point(20, 59);
             label1.Name = "label1";
             label1.Size = new Size(82, 16);
@@ -86,6 +87,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial", 9.75F, FontStyle.Bold);
+            label2.ForeColor = SystemColors.ControlDarkDark;
             label2.Location = new Point(20, 103);
             label2.Name = "label2";
             label2.Size = new Size(83, 16);
@@ -96,6 +98,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Arial", 9.75F, FontStyle.Bold);
+            label3.ForeColor = SystemColors.ControlDarkDark;
             label3.Location = new Point(20, 145);
             label3.Name = "label3";
             label3.Size = new Size(99, 16);
@@ -106,6 +109,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 9.75F, FontStyle.Bold);
+            label4.ForeColor = SystemColors.ControlDarkDark;
             label4.Location = new Point(20, 207);
             label4.Name = "label4";
             label4.Size = new Size(67, 16);
@@ -125,6 +129,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Arial", 9.75F, FontStyle.Bold);
+            label5.ForeColor = SystemColors.ControlDarkDark;
             label5.Location = new Point(20, 237);
             label5.Name = "label5";
             label5.Size = new Size(94, 16);
@@ -142,6 +147,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Arial", 9.75F, FontStyle.Bold);
+            label6.ForeColor = SystemColors.ControlDarkDark;
             label6.Location = new Point(20, 294);
             label6.Name = "label6";
             label6.Size = new Size(126, 16);
@@ -162,7 +168,7 @@
             button1.BackColor = SystemColors.GradientActiveCaption;
             button1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.HighlightText;
-            button1.Location = new Point(345, 313);
+            button1.Location = new Point(52, 343);
             button1.Name = "button1";
             button1.Size = new Size(138, 39);
             button1.TabIndex = 15;
@@ -196,6 +202,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Arial", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = SystemColors.ControlDarkDark;
             label7.Location = new Point(12, 22);
             label7.Name = "label7";
             label7.Size = new Size(218, 19);

@@ -36,12 +36,6 @@ namespace StudentRegForm
             System.Diagnostics.Debug.WriteLine("Gender: " + gender);
             System.Diagnostics.Debug.WriteLine("Program: " + program);
             System.Diagnostics.Debug.WriteLine("Date: " + date);
-
-
-
-
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
