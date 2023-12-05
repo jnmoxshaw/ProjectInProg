@@ -51,7 +51,7 @@
             label1.ForeColor = SystemColors.ControlDarkDark;
             label1.Location = new Point(122, 24);
             label1.Name = "label1";
-            label1.Size = new Size(182, 19);
+            label1.Size = new Size(276, 29);
             label1.TabIndex = 0;
             label1.Text = "Administrator Controls";
             // 
@@ -62,10 +62,9 @@
             label2.ForeColor = SystemColors.ControlDarkDark;
             label2.Location = new Point(30, 57);
             label2.Name = "label2";
-            label2.Size = new Size(52, 16);
+            label2.Size = new Size(76, 24);
             label2.TabIndex = 1;
             label2.Text = "Name :";
-            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -74,7 +73,7 @@
             label3.ForeColor = SystemColors.ControlDarkDark;
             label3.Location = new Point(30, 82);
             label3.Name = "label3";
-            label3.Size = new Size(73, 16);
+            label3.Size = new Size(107, 24);
             label3.TabIndex = 2;
             label3.Text = "Surname :";
             // 
@@ -88,6 +87,7 @@
             button1.TabIndex = 3;
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -99,6 +99,7 @@
             button2.TabIndex = 4;
             button2.Text = "Remove";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // dataGridView1
             // 
@@ -107,31 +108,32 @@
             dataGridView1.GridColor = SystemColors.HotTrack;
             dataGridView1.Location = new Point(30, 153);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(369, 186);
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.Size = new Size(370, 186);
             dataGridView1.TabIndex = 5;
             // 
             // textBox1
             // 
             textBox1.Location = new Point(122, 57);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(277, 22);
+            textBox1.Size = new Size(277, 30);
             textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
             textBox2.Location = new Point(122, 85);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(277, 22);
+            textBox2.Size = new Size(277, 30);
             textBox2.TabIndex = 7;
-            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // menuStrip1
             // 
             menuStrip1.BackColor = SystemColors.GradientInactiveCaption;
+            menuStrip1.ImageScalingSize = new Size(24, 24);
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(426, 24);
+            menuStrip1.Size = new Size(426, 32);
             menuStrip1.TabIndex = 8;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -141,7 +143,7 @@
             menuToolStripMenuItem.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuToolStripMenuItem.ForeColor = SystemColors.ControlDarkDark;
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(50, 20);
+            menuToolStripMenuItem.Size = new Size(74, 28);
             menuToolStripMenuItem.Text = "Menu";
             // 
             // logoutToolStripMenuItem
@@ -149,12 +151,13 @@
             logoutToolStripMenuItem.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             logoutToolStripMenuItem.ForeColor = SystemColors.ControlDarkDark;
             logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            logoutToolStripMenuItem.Size = new Size(180, 22);
+            logoutToolStripMenuItem.Size = new Size(270, 34);
             logoutToolStripMenuItem.Text = "Logout";
+            logoutToolStripMenuItem.Click += logoutToolStripMenuItem_Click;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(8F, 16F);
+            AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(426, 348);

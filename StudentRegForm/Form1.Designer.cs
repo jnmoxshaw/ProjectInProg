@@ -57,7 +57,7 @@
             textBox1.Location = new Point(20, 78);
             textBox1.Margin = new Padding(2, 3, 2, 3);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(235, 22);
+            textBox1.Size = new Size(235, 30);
             textBox1.TabIndex = 1;
             // 
             // textBox2
@@ -65,7 +65,7 @@
             textBox2.Location = new Point(20, 122);
             textBox2.Margin = new Padding(2, 3, 2, 3);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(235, 22);
+            textBox2.Size = new Size(235, 30);
             textBox2.TabIndex = 3;
             // 
             // textBox3
@@ -73,7 +73,7 @@
             textBox3.Location = new Point(20, 164);
             textBox3.Margin = new Padding(2, 3, 2, 3);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(235, 22);
+            textBox3.Size = new Size(235, 30);
             textBox3.TabIndex = 5;
             // 
             // label1
@@ -83,7 +83,7 @@
             label1.ForeColor = SystemColors.ControlDarkDark;
             label1.Location = new Point(20, 59);
             label1.Name = "label1";
-            label1.Size = new Size(82, 16);
+            label1.Size = new Size(122, 24);
             label1.TabIndex = 6;
             label1.Text = "Last name *";
             // 
@@ -94,7 +94,7 @@
             label2.ForeColor = SystemColors.ControlDarkDark;
             label2.Location = new Point(20, 103);
             label2.Name = "label2";
-            label2.Size = new Size(83, 16);
+            label2.Size = new Size(124, 24);
             label2.TabIndex = 7;
             label2.Text = "First name *";
             // 
@@ -105,7 +105,7 @@
             label3.ForeColor = SystemColors.ControlDarkDark;
             label3.Location = new Point(20, 145);
             label3.Name = "label3";
-            label3.Size = new Size(99, 16);
+            label3.Size = new Size(143, 24);
             label3.TabIndex = 8;
             label3.Text = "Middle name *";
             // 
@@ -116,7 +116,7 @@
             label4.ForeColor = SystemColors.ControlDarkDark;
             label4.Location = new Point(20, 207);
             label4.Name = "label4";
-            label4.Size = new Size(67, 16);
+            label4.Size = new Size(100, 24);
             label4.TabIndex = 9;
             label4.Text = "Gender * ";
             // 
@@ -126,7 +126,7 @@
             comboBox1.Items.AddRange(new object[] { "Male", "Female", "Prefer not to say" });
             comboBox1.Location = new Point(93, 204);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(162, 24);
+            comboBox1.Size = new Size(162, 31);
             comboBox1.TabIndex = 10;
             // 
             // label5
@@ -136,7 +136,7 @@
             label5.ForeColor = SystemColors.ControlDarkDark;
             label5.Location = new Point(20, 237);
             label5.Name = "label5";
-            label5.Size = new Size(94, 16);
+            label5.Size = new Size(142, 24);
             label5.TabIndex = 11;
             label5.Text = "Date of birth *";
             // 
@@ -144,7 +144,7 @@
             // 
             dateTimePicker1.Location = new Point(20, 259);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 22);
+            dateTimePicker1.Size = new Size(200, 30);
             dateTimePicker1.TabIndex = 12;
             // 
             // label6
@@ -154,7 +154,7 @@
             label6.ForeColor = SystemColors.ControlDarkDark;
             label6.Location = new Point(20, 294);
             label6.Name = "label6";
-            label6.Size = new Size(126, 16);
+            label6.Size = new Size(187, 24);
             label6.TabIndex = 13;
             label6.Text = "Program to apply *";
             // 
@@ -164,7 +164,7 @@
             comboBox2.Items.AddRange(new object[] { "BS in Information Technology (BSIT)", "BS in Computer Science (BSCS)", "BS in Information Systems (BSIS)", "2-yr. Information Technology (IT)", "2-yr. Associate in Computer Technology (ACT)", "BS in Business Administration (BSBA)", "BS in Accountancy (BSA)", "BS in Accounting Information System (BSAIS)", "BS in Management Accounting (BSMA)", "BS in Retail Technology and Consumer Science (BSRTCS)", "2-yr. Associate in Retail Technology (ART)", "BS in Hospitality Management (BSHM)", "BS in Culinary Management (BSCM)", "3-yr. Hotel and Restaurant Administration (HRA)", "2-yr. Hospitality and Restaurant Services (HRS)", "BS in Tourism Management (BSTM)", "2-yr. Tourism and Events Management (TEM)", "BS in Computer Engineering (BSCpE)", "Bachelor of Multimedia Arts (BMMA)", "BA in Communication (BACOMM)", "Bachelor of Science in Marine Transportation (BSMT)", "Bachelor of Science in Marine Engineering (BSMarE)", "Bachelor of Science in Naval Architecture and Marine Engineering (BSNAME)" });
             comboBox2.Location = new Point(20, 313);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(235, 24);
+            comboBox2.Size = new Size(235, 31);
             comboBox2.TabIndex = 14;
             // 
             // button1
@@ -209,17 +209,18 @@
             label7.ForeColor = SystemColors.ControlDarkDark;
             label7.Location = new Point(174, 5);
             label7.Name = "label7";
-            label7.Size = new Size(218, 19);
+            label7.Size = new Size(343, 30);
             label7.TabIndex = 18;
             label7.Text = "Student Registration Form";
             // 
             // menuStrip1
             // 
             menuStrip1.BackColor = SystemColors.GradientInactiveCaption;
+            menuStrip1.ImageScalingSize = new Size(24, 24);
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(562, 26);
+            menuStrip1.Size = new Size(562, 35);
             menuStrip1.TabIndex = 19;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -229,7 +230,7 @@
             menuToolStripMenuItem.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             menuToolStripMenuItem.ForeColor = SystemColors.ControlDarkDark;
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            menuToolStripMenuItem.Size = new Size(60, 22);
+            menuToolStripMenuItem.Size = new Size(90, 31);
             menuToolStripMenuItem.Text = "Menu";
             // 
             // logoutToolStripMenuItem
@@ -237,12 +238,13 @@
             logoutToolStripMenuItem.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             logoutToolStripMenuItem.ForeColor = SystemColors.ControlDarkDark;
             logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            logoutToolStripMenuItem.Size = new Size(180, 22);
+            logoutToolStripMenuItem.Size = new Size(270, 34);
             logoutToolStripMenuItem.Text = "Logout";
+            logoutToolStripMenuItem.Click += logoutToolStripMenuItem_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 16F);
+            AutoScaleDimensions = new SizeF(11F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(562, 401);

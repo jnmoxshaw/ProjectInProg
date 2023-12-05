@@ -43,7 +43,7 @@
             label2.AutoSize = true;
             label2.Location = new Point(27, 41);
             label2.Name = "label2";
-            label2.Size = new Size(72, 15);
+            label2.Size = new Size(102, 21);
             label2.TabIndex = 1;
             label2.Text = "Username :";
             // 
@@ -52,7 +52,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(27, 70);
             label3.Name = "label3";
-            label3.Size = new Size(69, 15);
+            label3.Size = new Size(99, 21);
             label3.TabIndex = 2;
             label3.Text = "Password :";
             // 
@@ -60,14 +60,14 @@
             // 
             textBox1.Location = new Point(110, 38);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(176, 21);
+            textBox1.Size = new Size(176, 28);
             textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
             textBox2.Location = new Point(110, 65);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(176, 21);
+            textBox2.Size = new Size(176, 28);
             textBox2.TabIndex = 4;
             // 
             // label1
@@ -77,10 +77,9 @@
             label1.ForeColor = SystemColors.ControlDarkDark;
             label1.Location = new Point(121, 9);
             label1.Name = "label1";
-            label1.Size = new Size(113, 18);
+            label1.Size = new Size(176, 27);
             label1.TabIndex = 0;
             label1.Text = "Login/Register";
-            label1.Click += label1_Click;
             // 
             // button1
             // 
@@ -90,6 +89,7 @@
             button1.TabIndex = 5;
             button1.Text = "Register a student";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -99,10 +99,11 @@
             button2.TabIndex = 6;
             button2.Text = "Login";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(358, 171);
