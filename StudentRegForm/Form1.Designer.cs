@@ -45,7 +45,11 @@
             pictureBox1 = new PictureBox();
             button2 = new Button();
             label7 = new Label();
+            menuStrip1 = new MenuStrip();
+            menuToolStripMenuItem = new ToolStripMenuItem();
+            logoutToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // textBox1
@@ -203,11 +207,38 @@
             label7.AutoSize = true;
             label7.Font = new Font("Arial", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.ControlDarkDark;
-            label7.Location = new Point(12, 22);
+            label7.Location = new Point(174, 5);
             label7.Name = "label7";
             label7.Size = new Size(218, 19);
             label7.TabIndex = 18;
             label7.Text = "Student Registration Form";
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.BackColor = SystemColors.GradientInactiveCaption;
+            menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(562, 26);
+            menuStrip1.TabIndex = 19;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            menuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { logoutToolStripMenuItem });
+            menuToolStripMenuItem.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            menuToolStripMenuItem.ForeColor = SystemColors.ControlDarkDark;
+            menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            menuToolStripMenuItem.Size = new Size(60, 22);
+            menuToolStripMenuItem.Text = "Menu";
+            // 
+            // logoutToolStripMenuItem
+            // 
+            logoutToolStripMenuItem.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            logoutToolStripMenuItem.ForeColor = SystemColors.ControlDarkDark;
+            logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            logoutToolStripMenuItem.Size = new Size(180, 22);
+            logoutToolStripMenuItem.Text = "Logout";
             // 
             // Form1
             // 
@@ -231,6 +262,7 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            Controls.Add(menuStrip1);
             Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -239,6 +271,8 @@
             Text = "Student Registration";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -260,5 +294,8 @@
         private PictureBox pictureBox1;
         private Button button2;
         private Label label7;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem menuToolStripMenuItem;
+        private ToolStripMenuItem logoutToolStripMenuItem;
     }
 }
