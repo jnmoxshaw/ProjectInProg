@@ -40,7 +40,7 @@ namespace StudentRegForm
             // ----
 
             this.Hide();
-            Form2 frm2 = new Form2();
+            Form3 frm2 = new Form3();
             frm2.Show();
         }
 
