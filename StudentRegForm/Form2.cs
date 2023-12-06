@@ -12,34 +12,18 @@ namespace StudentRegForm
 {
     public partial class Form2 : Form
     {
+
+        public static DataTable dt = new DataTable();
         public Form2()
         {
-
             InitializeComponent();
+            dataGridView1.DataSource = dt;
+
         }
-
-        DataTable dt = new DataTable();
-
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            string firstName = Form1.firstName;
-            string lastName = Form1.lastName;
-            string middleName = Form1.middleName;
-            string gender = Form1.gender;
-            string date = Form1.date;
-            string program = Form1.program;
-
-            dt.Columns.Add("Last Name", typeof(string));
-            dt.Columns.Add("First Name", typeof(string));
-            dt.Columns.Add("Middle Name", typeof(string));
-            dt.Columns.Add("Gender", typeof(string));
-            dt.Columns.Add("Date", typeof(string));
-            dt.Columns.Add("Program", typeof(string));
-
-
-            dt.Rows.Add(firstName, lastName, middleName, gender, date, program);
-            dataGridView1.DataSource = dt;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -65,6 +49,9 @@ namespace StudentRegForm
             frm3.Show();
         }
 
-       
+        private void registerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

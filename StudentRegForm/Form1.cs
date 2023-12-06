@@ -8,14 +8,23 @@ namespace StudentRegForm
         public static string gender = "";
         public static string program = "";
         public static string date = "";
+
+        Form2 frm2 = new Form2();
         public Form1()
         {
             InitializeComponent();
+
+            Form2.dt.Columns.Add("Last Name", typeof(string));
+            Form2.dt.Columns.Add("First Name", typeof(string));
+            Form2.dt.Columns.Add("Middle Name", typeof(string));
+            Form2.dt.Columns.Add("Gender", typeof(string));
+            Form2.dt.Columns.Add("Date", typeof(string));
+            Form2.dt.Columns.Add("Program", typeof(string));
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,9 +48,11 @@ namespace StudentRegForm
             System.Diagnostics.Debug.WriteLine("Date: " + date);
             // ----
 
-            this.Hide();
-            Form3 frm2 = new Form3();
-            frm2.Show();
+            
+            
+            frm2.ShowDialog();
+            Form2.dt.Rows.Add(firstName, lastName, middleName, gender, date, program);
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -59,8 +70,7 @@ namespace StudentRegForm
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form3 frm3 = new Form3();
-            this.Hide();
-            frm3.Show();
+            frm3.ShowDialog();
         }
     }
 }

@@ -25,15 +25,13 @@ namespace StudentRegForm
             if (userName == "admin" && password == "123") {
                 Form2 frm2 = new Form2();
                 this.Hide();
-                frm2.Show();
+                frm2.ShowDialog();
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
             this.Hide();
-            form1.Show();
         }
     }
 }
