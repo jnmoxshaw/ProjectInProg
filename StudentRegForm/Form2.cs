@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace StudentRegForm
 {
     public partial class Form2 : Form
@@ -19,6 +20,7 @@ namespace StudentRegForm
         }
 
         DataTable dt = new DataTable();
+        int indexRow;
 
 
         private void Form2_Load(object sender, EventArgs e)
@@ -44,10 +46,17 @@ namespace StudentRegForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String firstNameForm2 = textBox1.Text;
-            String lastNameForm2 = textBox2.Text;
+            string firstNameForm2 = textBox2.Text;
+            string lastNameForm2 = textBox1.Text;
+            string middleNameForm2 = textBox3.Text;
+            string dateForm2 = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+            Object selectedItem = comboBox1.SelectedItem;
+            Object selectedItem2 = comboBox2.SelectedItem;
 
-            dt.Rows.Add(firstNameForm2, lastNameForm2);
+            string genderForm1 = selectedItem.ToString();
+            string programForm2 = selectedItem2.ToString();
+
+            dt.Rows.Add(firstNameForm2, lastNameForm2, middleNameForm2, genderForm1, dateForm2, programForm2);
             dataGridView1.DataSource = dt;
         }
 
@@ -65,6 +74,28 @@ namespace StudentRegForm
             frm3.Show();
         }
 
-       
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
+            DataGridViewRow row = dataGridView1.Rows[indexRow];
+            textBox1.Text = row.Cells[0].Value.ToString();
+            textBox2.Text = row.Cells[1].Value.ToString();
+            textBox3.Text = row.Cells[2].Value.ToString();
+            comboBox1.Text = row.Cells[3].Value.ToString();
+            dateTimePicker1.Text = row.Cells[4].Value.ToString();
+            comboBox2.Text = row.Cells[5].Value.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow editRow = dataGridView1.Rows[indexRow];
+            editRow.Cells[0].Value = textBox1.Text;
+            editRow.Cells[1].Value = textBox2.Text;
+            editRow.Cells[2].Value = textBox3.Text;
+            editRow.Cells[3].Value = comboBox1.Text;
+            editRow.Cells[4].Value = dateTimePicker1.Text;
+            editRow.Cells[5].Value = comboBox2.Text;
+
+        }
     }
 }

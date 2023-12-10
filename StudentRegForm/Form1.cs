@@ -28,7 +28,7 @@ namespace StudentRegForm
 
             gender = selectedItem.ToString();
             program = selectedItem2.ToString();
-            date = dateTimePicker1.Value.ToString("yyyy-MM--dd");
+            date = dateTimePicker1.Value.ToString("yyyy-MM-dd");
 
             // Debugging Only!
             System.Diagnostics.Debug.WriteLine("First Name: " + firstName);

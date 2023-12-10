@@ -22,7 +22,7 @@ namespace StudentRegForm
             String userName = textBox1.Text;
             String password = textBox2.Text;
 
-            if (userName == "admin" && password == "123") {
+            if (userName == "123" && password == "123") {
                 Form2 frm2 = new Form2();
                 this.Hide();
                 frm2.Show();
