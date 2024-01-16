@@ -91,7 +91,7 @@
             button1.ForeColor = SystemColors.ControlDarkDark;
             button1.Location = new Point(30, 189);
             button1.Name = "button1";
-            button1.Size = new Size(86, 25);
+            button1.Size = new Size(86, 41);
             button1.TabIndex = 3;
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = true;
@@ -101,9 +101,9 @@
             // 
             button2.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.ControlDarkDark;
-            button2.Location = new Point(136, 189);
+            button2.Location = new Point(122, 189);
             button2.Name = "button2";
-            button2.Size = new Size(86, 25);
+            button2.Size = new Size(106, 41);
             button2.TabIndex = 4;
             button2.Text = "Remove";
             button2.UseVisualStyleBackColor = true;
@@ -244,11 +244,11 @@
             // 
             button3.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = SystemColors.ControlDarkDark;
-            button3.Location = new Point(248, 189);
+            button3.Location = new Point(234, 189);
             button3.Name = "button3";
-            button3.Size = new Size(86, 25);
+            button3.Size = new Size(98, 41);
             button3.TabIndex = 17;
-            button3.Text = "Edit";
+            button3.Text = "Update";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 

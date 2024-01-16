@@ -1,13 +1,10 @@
+using System.Data.SqlClient;
 namespace StudentRegForm
 {
     public partial class Form1 : Form
     {
-        public static string lastName = "";
-        public static string firstName = "";
-        public static string middleName = "";
-        public static string gender = "";
-        public static string program = "";
-        public static string date = "";
+        string strConnection = @"Data Source=AMIEL\SQLEXPRESS;Initial Catalog=student_db;Integrated Security=True";
+
         public Form1()
         {
             InitializeComponent();
@@ -20,28 +17,33 @@ namespace StudentRegForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            firstName = textBox1.Text;
-            middleName = textBox2.Text;
-            lastName = textBox3.Text;
-            Object selectedItem = comboBox1.SelectedItem;
-            Object selectedItem2 = comboBox2.SelectedItem;
+            //firstName = textBox1.Text;
+            //middleName = textBox2.Text;
+            //lastName = textBox3.Text;
+            //Object selectedItem = comboBox1.SelectedItem;
+            //Object selectedItem2 = comboBox2.SelectedItem;
 
-            gender = selectedItem.ToString();
-            program = selectedItem2.ToString();
-            date = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+            //gender = selectedItem.ToString();
+            //program = selectedItem2.ToString();
+            //date = dateTimePicker1.Value.ToString("yyyy-MM-dd");
 
-            // Debugging Only!
-            System.Diagnostics.Debug.WriteLine("First Name: " + firstName);
-            System.Diagnostics.Debug.WriteLine("Last Name: " + lastName);
-            System.Diagnostics.Debug.WriteLine("Middle Name: " + middleName);
-            System.Diagnostics.Debug.WriteLine("Gender: " + gender);
-            System.Diagnostics.Debug.WriteLine("Program: " + program);
-            System.Diagnostics.Debug.WriteLine("Date: " + date);
-            // ----
+           insert(textBox3.Text, textBox1.Text, textBox2.Text, comboBox1.SelectedItem.ToString(), dateTimePicker1.Value.ToString("yyyy-MM-dd"), comboBox2.SelectedItem.ToString());
 
             this.Hide();
             Form3 frm2 = new Form3();
             frm2.Show();
+        }
+
+        void insert(string LastName, string FirstName, string MiddleName, string Gender, string Date, string Program)
+        {
+            SqlConnection SqlConn = new SqlConnection(strConnection);
+            string strSQL = "INSERT INTO students VALUES ('" +LastName+ "', '"+FirstName+"', '"+MiddleName+"', '"+Gender+"', '"+Date+"', '"+Program+"');";
+            SqlCommand sqlComd = new SqlCommand(strSQL, SqlConn);
+
+            sqlComd.Connection.Open();
+            sqlComd.ExecuteNonQuery();
+
+            SqlConn.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -41,7 +41,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(27, 41);
+            label2.Location = new Point(12, 41);
             label2.Name = "label2";
             label2.Size = new Size(102, 21);
             label2.TabIndex = 1;
@@ -50,7 +50,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(27, 70);
+            label3.Location = new Point(12, 69);
             label3.Name = "label3";
             label3.Size = new Size(99, 21);
             label3.TabIndex = 2;
@@ -75,7 +75,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlDarkDark;
-            label1.Location = new Point(121, 9);
+            label1.Location = new Point(110, 9);
             label1.Name = "label1";
             label1.Size = new Size(176, 27);
             label1.TabIndex = 0;
@@ -83,9 +83,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(110, 121);
+            button1.Location = new Point(110, 141);
             button1.Name = "button1";
-            button1.Size = new Size(176, 23);
+            button1.Size = new Size(176, 36);
             button1.TabIndex = 5;
             button1.Text = "Register a student";
             button1.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(110, 92);
+            button2.Location = new Point(110, 102);
             button2.Name = "button2";
-            button2.Size = new Size(176, 23);
+            button2.Size = new Size(176, 33);
             button2.TabIndex = 6;
             button2.Text = "Login";
             button2.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(358, 171);
+            ClientSize = new Size(358, 189);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox2);
