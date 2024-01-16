@@ -12,21 +12,10 @@ namespace StudentRegForm
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //firstName = textBox1.Text;
-            //middleName = textBox2.Text;
-            //lastName = textBox3.Text;
-            //Object selectedItem = comboBox1.SelectedItem;
-            //Object selectedItem2 = comboBox2.SelectedItem;
-
-            //gender = selectedItem.ToString();
-            //program = selectedItem2.ToString();
-            //date = dateTimePicker1.Value.ToString("yyyy-MM-dd");
-
            insert(textBox3.Text, textBox1.Text, textBox2.Text, comboBox1.SelectedItem.ToString(), dateTimePicker1.Value.ToString("yyyy-MM-dd"), comboBox2.SelectedItem.ToString());
 
             this.Hide();

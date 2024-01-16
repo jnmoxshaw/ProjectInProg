@@ -16,7 +16,6 @@ namespace StudentRegForm
         {
             InitializeComponent();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             String userName = textBox1.Text;
